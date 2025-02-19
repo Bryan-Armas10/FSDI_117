@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+<section class="about-section center-row">
+    <div class="about-image-container center-row">
+        <img src="{% static './img/my-photo.png' %}" alt="my amazing picture">
+    </div>
+
+    <div class="about-description-container center-column">
+        <h1>My rol as dev</h1>
+        <h2>Bryan Armas</h2>
+
+        <p>I am a passionate developer about technology, always looking for new opportunities to learn and grow. Throughout my career, I have worked with various programming 
+            languages and technologies, which has allowed me to develop robust applications and efficient solutions. My focus is on writing clean, scalable, and maintainable 
+            code, while striving to optimize each project with the best development practices.
+        </p>
+        <p>
+            I am familiar with C#, Python, JavaScript, sql, etc, and worked in web development, mobile applications, backend, frontend. My goal is to create applications that 
+            solve real problems and improve the user experience.
+        </p>
+    </div>
+
+</section>
+
+<section class="skills-section center-column">
+    <h2>My skills</h2>
+
+    <div class="skills-list">
+        <label class="text-label">C#</label>
+        <label class="text-label">HTML</label>
+        <label class="text-label">JavaScrip</label>
+        <label class="text-label">python</label>
+        <label class="text-label">css</label>
+        <label class="text-label">sql</label>
+
+    </div>
+</section>
+
+{% endblock content %}

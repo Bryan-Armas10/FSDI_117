@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+<h1>Welcome to my projects</h1>
+
+<section class="projects-section center-column">
+        <div class="projects-list">
+            <img src="{% static './img/picture-1.jpg' %}" alt="my amazing picture">
+                <h2>First Project</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="projects-list">
+            <img src="{% static './img/picture-2.jpg' %}" alt="my amazing picture">
+            <h2>Second Project</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="projects-list">
+            <img src="{% static './img/picture-3.jpg' %}" alt="my amazing picture">
+            <h2>Third Project</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>         
+</section>
+
+
+{% endblock content %}

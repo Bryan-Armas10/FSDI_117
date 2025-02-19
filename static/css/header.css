@@ -1,0 +1,51 @@
+header{
+    background-color: var(--surface-color);
+    height: 60px;
+    position: sticky;
+    top: 0px
+}
+
+nav{
+    height: 100%;
+    width: 70%;
+}
+
+.nav-link{
+    height: 100%;
+}
+
+.nav-link a{
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 6%;
+    padding: 1% 6%;
+}
+
+.nav-link a:hover{
+    border-bottom: solid 2px white;
+}
+
+/* hamburger buttom */
+.nav-btn span{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px auto;
+}
+
+#nav-check, .nav-btn{
+    display: none;
+}
+
+.logo-container a h2{
+    color: white;
+    margin-right: 100px;
+}
+
+.center-header-sections{
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+}
