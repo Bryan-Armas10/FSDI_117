@@ -2,9 +2,14 @@
 {% load static %}
 {% block content %}
 
-<h1>Welcome to my projects</h1>
 
-<h3>Projects</h3>
+{% if user.is_authenticated %}
+<div class="add-project-container">
+    <a class="btn" href="{% url 'project_new' %}">Add New Project</a>
+</div>
+{% endif %}
+
+<h2>Projects</h2>
 
 <div class="projects-list">
 

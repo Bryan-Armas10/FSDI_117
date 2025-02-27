@@ -98,7 +98,7 @@ a p:nth-child(4), .experience-card p:nth-child(4) {
 
 .contact-section form {
     padding-top: 1.5rem;
-    background-color: white;
+    background-color: var(--secondary-color);
     border: 1px solid #3f3f3f;
     border-radius: 4px;
     padding: 20px 30px 10px 20px;
@@ -121,49 +121,50 @@ a p:nth-child(4), .experience-card p:nth-child(4) {
     padding: 5px;
 }
 
-
-/* CSS */
-.button-29 {
-  align-items: center;
-  appearance: none;
-  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
-  border: 0;
-  border-radius: 6px;
-  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
-  height: 48px;
-  justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
-  font-size: 18px;
+.add-project-container {
+    background-color: var(--secondary-color);
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 2%;
+    margin: 2rem 0px;
 }
 
-.button-29:focus {
-  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+.projectForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 4rem;
+    margin-top: 2rem;
 }
 
-.button-29:hover {
-  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-  transform: translateY(-2px);
+.new-project-section {
+    padding-top: 1rem;
 }
 
-.button-29:active {
-  box-shadow: #3c4fe0 0 3px 7px inset;
-  transform: translateY(2px);
+
+.new-project-section form {
+    padding-top: 1.5rem;
+    background-color: var(--secondary-color);
+    border: 1px solid #3f3f3f;
+    border-radius: 4px;
+    padding: 20px 30px 10px 20px;
+    margin-top: 2rem;
+}
+
+.new-project-section .field {
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.new-project-section .field label {
+    display: block;
+    color: var(--neutral-color);
+}
+
+.new-project-section .field input,
+.new-project-section .field textarea {
+    width: 100%;
+    padding: 5px;
 }

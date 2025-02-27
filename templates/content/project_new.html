@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<section class="new-project-section center-column">
+    <h2>New Project</h2>
+
+    <form id="projectForm" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <div class="field">
+            <label>Name</label>
+            {{ form.name }}
+        </div>
+
+        <div class="field">
+            <label>Description</label>
+            {{ form.description }}
+        </div>
+
+        <div class="field">
+            <label>Year</label>
+            {{ form.year }}
+        </div>
+
+        <div class="field">
+            <label>Image</label>
+            {{ form.image }}
+        </div>
+
+        <div class="field">
+            <label>Repository</label>
+            {{ form.repository }}
+        </div>
+
+        <div class="field">
+            <label>Skill</label>
+            {{ form.skill }}
+        </div>
+
+        <div class="controls">
+            <button type="reset">Reset</button>
+            <button type="submit">Save Project</button>
+        </div>
+
+    </form>
+</section>
+
+{% endblock content %}
