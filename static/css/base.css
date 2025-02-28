@@ -1,13 +1,16 @@
 /* Variables */
 :root{
-    /* --primary-color: #334EEF; */
-    --primary-color: #06dbd5;
+    /* --primary-color: #06dbd5;
     --secondary-color: #6772d7;
     --neutral-color: #333333;
-    /* --background-color: #F5F8FF; */
     --background-color: #aceb94;
-    /* --surface-color: #435DEF; */
-    --surface-color: #20dac4;
+    --surface-color: #20dac4; */
+
+    --primary-color: #2A3340;
+    --secondary-color: #5F6D73;
+    --neutral-color: white;
+    --background-color: #B4B4AA;
+    --surface-color: #BF8C6F;
     
     --lobster-font: 'Lobster Two', 'selft';
     --sans-font: 'Open Sans', serif;
